@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!-- google-fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,6 +25,12 @@
                 <!--  logo  -->
                 <a class="logo link" href="./index.html">Web<span class="logo-studio logo-header">Studio</span></a>
 
+                <button type="button" class="menu-button-open js-open-menu" aria-expanded="false"
+                    aria-controls="mobile-menu">
+                    <svg width="32" height="22">
+                        <use href="./images/icons.svg#icon-burger"></use>
+                    </svg>
+                </button>
                 <!-- navigation -->
                 <ul class="menu list">
                     <li class="menu-item">
@@ -74,7 +80,7 @@
                                 <use href="./images/icons.svg#icon-antenna"></use>
                             </svg>
                         </div>
-                        <h3 class="section-subtitle">Strategy</h3>
+                        <h3 class="section-subtitle possibilities">Strategy</h3>
                         <p class="services-desc">
                             Our goal is to identify the business
                             problem to walk away with the perfect and creative solution.
@@ -86,7 +92,7 @@
                                 <use href="./images/icons.svg#icon-clock"></use>
                             </svg>
                         </div>
-                        <h3 class="section-subtitle">Punctuality</h3>
+                        <h3 class="section-subtitle possibilities">Punctuality</h3>
                         <p class="services-desc">
                             Bring the key message to the brand's audience for the best price within the shortest
                             possible
@@ -99,7 +105,7 @@
                                 <use href="./images/icons.svg#icon-diagram"></use>
                             </svg>
                         </div>
-                        <h3 class="section-subtitle">Diligence</h3>
+                        <h3 class="section-subtitle possibilities">Diligence</h3>
                         <p class="services-desc">
                             Research and confirm brands that present the strongest digital growth opportunities and
                             minimize
@@ -112,7 +118,7 @@
                                 <use href="./images/icons.svg#icon-astronaut"></use>
                             </svg>
                         </div>
-                        <h3 class="section-subtitle">Technologies</h3>
+                        <h3 class="section-subtitle possibilities">Technologies</h3>
                         <p class="services-desc">
                             Design practice focused on digital experiences. We bring forth a deep passion for
                             problem-solving.
@@ -128,13 +134,16 @@
                 <h2 class="section-title">What are we doing</h2>
                 <ul class="what-are-we-doing-list list">
                     <li class="what-are-we-doing-item">
-                        <img class="img" src="./images/img1what-are-we-doing.jpg" alt="What are we doing" width="360">
+                        <img class="img" src="./images/what-are-we-doing/tp1@1x.jpg" alt="What are we doing"
+                            width="360">
                     </li>
                     <li class="what-are-we-doing-item">
-                        <img class="img" src="./images/img2what-are-we-doing.jpg" alt="What are we doing" width="360">
+                        <img class="img" src="./images/what-are-we-doing/tp2@1x.jpg" alt="What are we doing"
+                            width="360">
                     </li>
                     <li class="what-are-we-doing-item">
-                        <img class="img" src="./images/img3what-are-we-doing.jpg" alt="What are we doing" width="360">
+                        <img class="img" src="./images/what-are-we-doing/tp3@1x.jpg" alt="What are we doing"
+                            width="360">
                     </li>
                 </ul>
             </div>
@@ -146,9 +155,12 @@
                 <h2 class="section-title">Our Team</h2>
                 <ul class="our-team-list list">
                     <li class="our-team-item">
-                        <img class="img" src="./images/img1mark.jpg" alt="mark" width="264">
+                        <picture>
+                            <source srcset="./images/team/team1@1x.jpg 1x, ./images/team/team1@2x.jpg 2x" />
+                            <img class="img" src="./images/team/team1@1x.jpg" alt="photo Mark Guerrero" width="264" />
+                        </picture>
                         <div class="our-team-item-text">
-                            <h3 class="section-subtitle">
+                            <h3 class="section-subtitle our-team-name">
                                 Mark Guerrero
 
                             </h3>
@@ -187,9 +199,12 @@
                         </div>
                     </li>
                     <li class="our-team-item">
-                        <img class="img" src="./images/img2tom.jpg" alt="tom" width="264">
+                        <picture>
+                            <source srcset="./images/team/team2@1x.jpg 1x, ./images/team/team2@2x.jpg 2x" />
+                            <img class="img" src="./images/team/team2@1x.jpg" alt="photo Tom Ford" width="264" />
+                        </picture>
                         <div class="our-team-item-text">
-                            <h3 class="section-subtitle">
+                            <h3 class="section-subtitle our-team-name">
                                 Tom Ford
 
                             </h3>
@@ -228,9 +243,12 @@
                         </div>
                     </li>
                     <li class="our-team-item">
-                        <img class="img" src="./images/img3camila.jpg" alt="camila" width="264">
+                        <picture>
+                            <source srcset="./images/team/team3@1x.jpg 1x, ./images/team/team3@2x.jpg 2x" />
+                            <img class="img" src="./images/team/team3@1x.jpg" alt="photo Camila Garcia" width="264" />
+                        </picture>
                         <div class="our-team-item-text">
-                            <h3 class="section-subtitle">
+                            <h3 class="section-subtitle our-team-name">
                                 Camila Garcia
 
                             </h3>
@@ -269,9 +287,12 @@
                         </div>
                     </li>
                     <li class="our-team-item">
-                        <img class="img" src="./images/img4daniel.jpg" alt="daniel" width="264">
+                        <picture>
+                            <source srcset="./images/team/team4@1x.jpg 1x, ./images/team/team4@2x.jpg 2x" />
+                            <img class="img" src="./images/team/team4@1x.jpg" alt="photo Daniel Wilson" width="264" />
+                        </picture>
                         <div class="our-team-item-text">
-                            <h3 class="section-subtitle">
+                            <h3 class="section-subtitle our-team-name">
                                 Daniel Wilson
 
                             </h3>
@@ -316,7 +337,7 @@
         <!-- customers  -->
         <section class="section-customers">
             <div class="container">
-                <h2 class="customers section-title">Customers</h2>
+                <h2 class="section-title customers">Customers</h2>
                 <ul class="customers-icons-list list">
                     <li class="customers-icons-item">
                         <a class="customers-icons-link" href="">
@@ -502,6 +523,7 @@
     </div>
     <!-- JS  -->
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
