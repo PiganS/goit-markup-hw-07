@@ -490,7 +490,7 @@ ul {
 }
 
 .footer-subscription-input {
-  width: 398px;
+  width: 100%;
   height: 40px;
   padding-left: 16px;
 
@@ -781,10 +781,6 @@ ul {
 .section-possibilities {
   padding: 96px 0;
 }
-.possibilities-list {
-  margin-left: auto;
-  margin-right: auto;
-}
 
 .possibilities-item {
   margin-bottom: 72px;
@@ -818,9 +814,85 @@ ul {
   text-align: left;
 }
 
+/************************************************** TABLET *********************************************************/
+
+@media screen and (min-width: 768px) {
+  .possibilities-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 72px 24px;
+  }
+
+  .possibilities-item {
+    margin-bottom: 0px;
+    max-width: calc((100% - 24px) / 2);
+  }
+
+  .section-subtitle.possibilities {
+    text-align: left;
+  }
+}
+
+/************************************************** DESKTOP *********************************************************/
+
+@media screen and (min-width: 1158px) {
+  .possibilities-icons-holder {
+    margin-bottom: 8px;
+    display: flex;
+    width: 264px;
+    height: 112px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--footer-text-color);
+    border-radius: 4px;
+  }
+
+  .section-possibilities {
+    padding: 120px 0;
+  }
+
+  .possibilities-item {
+    max-width: calc((100% - 72px) / 4);
+  }
+
+  .services-desc {
+    font-weight: 400;
+  }
+
+  .section-subtitle.possibilities {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
 /*============What-are-we-doing=============*/
 .section-what-are-we-doing {
   display: none;
+}
+
+/************************************************** DESKTOP *********************************************************/
+
+@media screen and (min-width: 1158px) {
+  .section-what-are-we-doing {
+    display: block;
+    padding-bottom: 120px;
+  }
+
+  .what-are-we-doing-list {
+    display: flex;
+    margin-left: auto;
+    margin-bottom: auto;
+  }
+  .what-are-we-doing-item {
+    margin-right: 24px;
+    width: calc((100% - 1px) / 3);
+  }
+
+  .what-are-we-doing-item:nth-last-child(-n + 1) {
+    margin-right: 0;
+  }
 }
 
 /* ==============our team ===================*/
@@ -895,6 +967,29 @@ ul {
   fill: var(--our-team-icons);
 }
 
+/************************************************** TABLET *********************************************************/
+
+@media screen and (min-width: 768px) {
+  .our-team-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 64px 24px;
+    justify-content: center;
+  }
+
+  .our-team-item {
+    margin: 0;
+  }
+}
+
+/************************************************** DESKTOP *********************************************************/
+
+@media screen and (min-width: 1158px) {
+  .section-our-team {
+    padding: 120px 0;
+  }
+}
+
 /*=================customers=================*/
 
 .section-customers {
@@ -946,6 +1041,34 @@ ul {
 
 .customers-icon {
   fill: currentColor;
+}
+
+/************************************************** TABLET *********************************************************/
+
+@media screen and (min-width: 768px) {
+  .section-customers {
+    padding-left: 108px;
+    padding-right: 108px;
+  }
+  .customers-icons-list {
+    gap: 72px 24px;
+  }
+
+  .customers-icons-item {
+    min-width: calc((100% - 72px) / 3);
+  }
+}
+
+/************************************************** DESKTOP *********************************************************/
+
+@media screen and (min-width: 1158px) {
+  .section-customers {
+    padding: 120px 0px;
+  }
+
+  .customers-icons-item {
+    min-width: calc((100% - 120px) / 6);
+  }
 }
 /* 2222222222 portfolio page 22222222222222  */
 
